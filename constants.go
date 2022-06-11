@@ -27,6 +27,7 @@ const (
 	// up to 9,223,372,036,854,775,807. Out of this 4 digits are used for the
 	// decimal part, i.e. 922,337,203,685,477.5807. The limit is set to this
 	// number minus 1, so that all decimals from .0000 to .9999. can be used.
+	//
 	IntLimit = 922337203685476
 
 	// NaN indicates a value that is not a number.

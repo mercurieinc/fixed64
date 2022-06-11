@@ -12,11 +12,11 @@ import (
 
 // MarshalJSON returns the JSON encoding of Fixed64.
 func (n Fixed64) MarshalJSON() ([]byte, error) {
-	//
+
 	// TODO: using fmt.Sprintf() may slow down performance.
 	//       There are faster ways to build a number with 4 decimals.
 	//       Create a benchmark to find the fastest method.
-	//
+
 	var (
 		i   = n.i64 / 1e4   // integer part
 		d   = n.i64 - i*1e4 // decimal part
